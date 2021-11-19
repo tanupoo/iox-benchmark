@@ -2,7 +2,7 @@
 
 # Usage: mkpkg.sh
 #        PROFILLE=ir809 mkpkg.sh
-#        PROFILLE=cat9135 TIME_EXEC=133000 mkpkg.sh
+#        PROFILLE=cat9135 EXEC_TIME=133000 mkpkg.sh
 # PROFILE     ir1101@home
 # APP_NAME    app${CPU_UNITS}
 # CPU_UNITS   32
@@ -10,7 +10,7 @@
 # NB_THREADS  1
 # MEMORY_SIZE 64
 # TARGET      sysbench
-# TIME_EXEC   None, HHMMSS
+# EXEC_TIME   None, HHMMSS
 # LOG_FILE    ${APP_NAME}.log
 
 image_name=ir1101-sysbench-cpu
@@ -21,24 +21,32 @@ nb_tests=${NB_TESTS:=20}
 nb_threads=${NB_THREADS:=1}
 memory_size=${MEMORY_SIZE:=64}
 target=${TARGET:=sysbench}
-time_exec=${TIME_EXEC}
+exec_time=${EXEC_TIME}
 log_file=${LOG_FILE:=${app_name}.log}
+app_base_dir=${APP_BASE_DIR:=app}
 
-runtime_options="-e TARGET=${target} -e NB_THREADS=${nb_threads} -e NB_TESTS=${nb_tests} -e TIME_EXEC=${time_exec} -e LOG_FILE=${log_file}"
+runtime_options="-e PROFILE=${profile} -e APP_NAME=${app_name} \
+    -e CPU_UNITS=${cpu_units} -e NB_TESTS=${nb_tests} \
+    -e NB_THREADS=${nb_threads} -e MEMORY_SIZE=${memory_size} \
+    -e TARGET=${target} -e EXEC_TIME=${exec_time} -e LOG_FILE=${log_file}"
+
+if [ ! -d "${app_base_dir}" ] ; then
+    mkdir ${app_base_dir}
+fi
 
 if [ -z "$app_name" -o -z "$cpu_units" ] ; then
     echo Must specify app_name and cup_units
-    exit 0
+    exit 128
 fi
 
-if [ -d ${app_name} ] ; then
-    echo Must delete the directory, ${app_name}
-    exit 0
+app_dir="${app_base_dir}/${app_name}"
+if [ -d ${app_dir} ] ; then
+    echo "Must delete the directory, ${app_dir}"
+    exit 128
 fi
+mkdir ${app_dir}
 
-mkdir ${app_name}
-
-cat <<EOD > ${app_name}/package.yaml
+cat <<EOD > ${app_dir}/package.yaml
 descriptor-schema-version: "2.12"
 info:
   name: ir1101-sysbench-cpu
@@ -66,9 +74,12 @@ app:
   type: docker
 EOD
 
-ioxclient --profile ${profile} docker pkg ${image_name} ${app_name}/
+# Packaging
+ioxclient --profile ${profile} docker pkg ${image_name} ${app_dir}/
+
 # Install
-ioxclient --profile ${profile} app in ${app_name} ${app_name}/package.tar
+ioxclient --profile ${profile} app in ${app_name} ${app_dir}/package.tar
+
 # Activate
 ioxclient --profile ${profile} app act ${app_name} \
     --payload activate.json \
