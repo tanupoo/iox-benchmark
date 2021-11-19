@@ -61,7 +61,7 @@ def tdconv(td, minutes: bool=False) -> str:
     if minutes:
         return (datetime.min + td).strftime("%M:%S.%f")[:9]
     else:
-        return f"{td.seconds:02}.{td.microseconds:06}"
+        return float(f"{td.seconds:02}.{td.microseconds:06}")
 
 # log file name: appNNN-xxxx
 # e.g. app128-YXBwMTI4LmxvZw==
