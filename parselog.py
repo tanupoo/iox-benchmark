@@ -175,7 +175,7 @@ for f in opt.files:
                 st_bench_dt = dtparse(st_bench)
                 if et_bench_dt and (sig_st_time_dt is None or
                                     st_bench_dt >= sig_st_time_dt):
-                    print("S", et_bench_dt, sig_st_time_dt, st_bench_dt, sig_st_time_dt)
+                    #print("S", et_bench_dt, sig_st_time_dt, st_bench_dt, sig_st_time_dt)
                     if g["nb_tests"] > 0:
                         g["interval_btw_tests"].append(
                                 tdconv(st_bench_dt - et_bench_dt))
@@ -185,7 +185,7 @@ for f in opt.files:
                 et_bench_dt = dtparse(et_bench)
                 if st_bench_dt and (sig_et_time_dt is None or
                                     et_bench_dt <= sig_et_time_dt):
-                    print("E", st_bench_dt, sig_et_time_dt, et_bench_dt, sig_et_time_dt)
+                    #print("E", st_bench_dt, sig_et_time_dt, et_bench_dt, sig_et_time_dt)
                     g["nb_tests"] += 1
                     g["ott_set"].append({ "st": st_bench, "et": et_bench })
                     g["one_test_time"].append(tdconv(et_bench_dt - st_bench_dt))
