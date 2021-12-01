@@ -1,7 +1,11 @@
 #!/bin/sh
 
-profile=${PROFILE:=ir1101@home}
+profile=${PROFILE:=ir1101@tlab}
 exec_time=${EXEC_TIME}
+nb_tests=${NB_TESTS:=20}
+nb_threads=${NB_THREADS:=1}
+target=${TARGET:=sysbench}
+memory_size=${MEMORY_SIZE:=64}
 
 app_base_dir="./app"
 
@@ -40,7 +44,9 @@ start()
         app_list="${app_list}${app_name} "
         echo "##"
         echo "## packaging $app_name"
-        PROFILE=${profile} APP_NAME=${app_name} CPU_UNITS=${unit} \
+        PROFILE=${profile} APP_NAME=${app_name} \
+            CPU_UNITS=${unit} MEMORY_SIZE=${memory_size} \
+            TARGET=${target} NB_TESTS=${nb_tests} NB_THREADS=${nb_threads} \
             EXEC_TIME=${exec_time} LOG_FILE=${app_name}.log \
             APP_BASE_DIR=${app_base_dir} \
             ./mkpkg.sh
@@ -59,8 +65,8 @@ start()
     echo ${app_list} > ${app_list_storage}
 
     get_app_list
-
     date
+    echo "EXEC_TIME: ${exec_time}"
 }
 
 getlog()
@@ -83,7 +89,7 @@ clean()
         ioxclient --profile ${profile} app stop ${app_name}
         ioxclient --profile ${profile} app deact ${app_name}
         ioxclient --profile ${profile} app unin ${app_name}
-        rm -rf ${app_dir}/${app_name}
+        rm -rf ${app_base_dir}/${app_name}
     done
 
     get_app_list
