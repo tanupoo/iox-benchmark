@@ -9,6 +9,7 @@ from dateutil.parser import parse as dtparse
 #graph
 import math
 import matplotlib.pyplot as plt
+import statistics
 
 if not (sys.version_info.major == 3 and sys.version_info.minor >= 8):
     print("Required Python 3.8 or later")
@@ -39,7 +40,7 @@ ap.add_argument("-et", "--end-time", action="store", dest="sig_et_time",
                 help="specify the end time to take into account.")
 ap.add_argument("-v", action="count", dest="verbose_level",
                 default=0,
-                help="increase verbose level.")
+                help="increase verbose level. max. -vvvv")
 
 # graph options
 ap.add_argument("--graph-mode", action="store", dest="graph_mode",
@@ -432,6 +433,11 @@ if not opt.no_stat:
     for i,v in enumerate(sorted(G, key=lambda x: x["cpu_units"])):
         print(fmt.format(1+i, *[ v[p] for p in vkey ]))
         if opt.verbose_level >= 2:
+            print(f"    Mean   : {statistics.mean(v['one_test_time'])}")
+            print(f"    Median : {statistics.median(v['one_test_time'])}")
+            print(f"    Mode   : {statistics.mode(v['one_test_time'])}")
+            print(f"    StdDev : {statistics.stdev(v['one_test_time'])}")
+        if opt.verbose_level >= 3:
             print(f"    Filename : {v['filename']}")
             print(f"    Sleep Time: {v['sleep']}")
             print(f"    Test Time: {v['one_test_time']}")
