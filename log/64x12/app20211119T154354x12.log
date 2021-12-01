@@ -1,0 +1,678 @@
+## Parameers
+profile: ir1101@home
+app_name: app20211119T154354x12
+cpu_units: 64
+nb_tests: 20
+nb_threads: 1
+memory_size: 64
+target: sysbench
+exec_time: 155000
+log_file: /iox_data/logs/app20211119T154354x12.log
+max_prime: 10000
+## Sleep: 2021-11-19T15:47:00.844766
+154700
+........................................................154800
+.........................................................154900
+.........................................................155001
+## Start: 2021-11-19T15:50:01.035049
+Start test 1: 2021-11-19T15:50:01.061799
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   171.72
+
+General statistics:
+    total time:                          10.0070s
+    total number of events:              1722
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.79
+         max:                                   43.83
+         95th percentile:                       13.95
+         sum:                                 9972.11
+
+Threads fairness:
+    events (avg/stddev):           1722.0000/0.00
+    execution time (avg/stddev):   9.9721/0.00
+
+End   test 1: 2021-11-19T15:50:11.118917
+Start test 2: 2021-11-19T15:50:11.134714
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   168.58
+
+General statistics:
+    total time:                          10.0040s
+    total number of events:              1695
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.88
+         max:                                  106.81
+         95th percentile:                       20.00
+         sum:                                 9974.51
+
+Threads fairness:
+    events (avg/stddev):           1695.0000/0.00
+    execution time (avg/stddev):   9.9745/0.00
+
+End   test 2: 2021-11-19T15:50:21.243155
+Start test 3: 2021-11-19T15:50:21.244716
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   189.70
+
+General statistics:
+    total time:                          10.0005s
+    total number of events:              1902
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.25
+         max:                                   48.02
+         95th percentile:                       12.98
+         sum:                                 9981.33
+
+Threads fairness:
+    events (avg/stddev):           1902.0000/0.00
+    execution time (avg/stddev):   9.9813/0.00
+
+End   test 3: 2021-11-19T15:50:31.285698
+Start test 4: 2021-11-19T15:50:31.292571
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   188.71
+
+General statistics:
+    total time:                          10.0041s
+    total number of events:              1892
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.27
+         max:                                   56.99
+         95th percentile:                       13.70
+         sum:                                 9963.09
+
+Threads fairness:
+    events (avg/stddev):           1892.0000/0.00
+    execution time (avg/stddev):   9.9631/0.00
+
+End   test 4: 2021-11-19T15:50:41.350199
+Start test 5: 2021-11-19T15:50:41.355199
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   187.25
+
+General statistics:
+    total time:                          10.0013s
+    total number of events:              1877
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.31
+         max:                                   69.78
+         95th percentile:                       12.98
+         sum:                                 9974.60
+
+Threads fairness:
+    events (avg/stddev):           1877.0000/0.00
+    execution time (avg/stddev):   9.9746/0.00
+
+End   test 5: 2021-11-19T15:50:51.413025
+Start test 6: 2021-11-19T15:50:51.422388
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   188.71
+
+General statistics:
+    total time:                          10.0003s
+    total number of events:              1888
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.27
+         max:                                   60.50
+         95th percentile:                       18.95
+         sum:                                 9953.24
+
+Threads fairness:
+    events (avg/stddev):           1888.0000/0.00
+    execution time (avg/stddev):   9.9532/0.00
+
+End   test 6: 2021-11-19T15:51:01.448485
+Start test 7: 2021-11-19T15:51:01.458118
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   176.83
+
+General statistics:
+    total time:                          10.0221s
+    total number of events:              1773
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.64
+         max:                                   51.20
+         95th percentile:                       17.63
+         sum:                                10003.32
+
+Threads fairness:
+    events (avg/stddev):           1773.0000/0.00
+    execution time (avg/stddev):   10.0033/0.00
+
+End   test 7: 2021-11-19T15:51:11.499967
+Start test 8: 2021-11-19T15:51:11.501888
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   142.89
+
+General statistics:
+    total time:                          10.0033s
+    total number of events:              1430
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    6.99
+         max:                                   64.88
+         95th percentile:                       33.12
+         sum:                                 9996.15
+
+Threads fairness:
+    events (avg/stddev):           1430.0000/0.00
+    execution time (avg/stddev):   9.9961/0.00
+
+End   test 8: 2021-11-19T15:51:21.544177
+Start test 9: 2021-11-19T15:51:21.553589
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   192.07
+
+General statistics:
+    total time:                          10.0025s
+    total number of events:              1926
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.18
+         max:                                   44.91
+         95th percentile:                        8.74
+         sum:                                 9984.59
+
+Threads fairness:
+    events (avg/stddev):           1926.0000/0.00
+    execution time (avg/stddev):   9.9846/0.00
+
+End   test 9: 2021-11-19T15:51:31.604930
+Start test 10: 2021-11-19T15:51:31.614478
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   187.34
+
+General statistics:
+    total time:                          10.0016s
+    total number of events:              1879
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.30
+         max:                                   28.02
+         95th percentile:                        9.91
+         sum:                                 9960.08
+
+Threads fairness:
+    events (avg/stddev):           1879.0000/0.00
+    execution time (avg/stddev):   9.9601/0.00
+
+End   test 10: 2021-11-19T15:51:41.664545
+Start test 11: 2021-11-19T15:51:41.666673
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   189.93
+
+General statistics:
+    total time:                          10.0047s
+    total number of events:              1905
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.25
+         max:                                   41.19
+         95th percentile:                       12.75
+         sum:                                 9995.79
+
+Threads fairness:
+    events (avg/stddev):           1905.0000/0.00
+    execution time (avg/stddev):   9.9958/0.00
+
+End   test 11: 2021-11-19T15:51:51.710261
+Start test 12: 2021-11-19T15:51:51.713579
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   193.59
+
+General statistics:
+    total time:                          10.0008s
+    total number of events:              1937
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.14
+         max:                                   62.19
+         95th percentile:                       11.65
+         sum:                                 9954.90
+
+Threads fairness:
+    events (avg/stddev):           1937.0000/0.00
+    execution time (avg/stddev):   9.9549/0.00
+
+End   test 12: 2021-11-19T15:52:01.739906
+Start test 13: 2021-11-19T15:52:01.741639
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   145.24
+
+General statistics:
+    total time:                          10.0176s
+    total number of events:              1456
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    6.86
+         max:                                  104.13
+         95th percentile:                       28.16
+         sum:                                 9993.03
+
+Threads fairness:
+    events (avg/stddev):           1456.0000/0.00
+    execution time (avg/stddev):   9.9930/0.00
+
+End   test 13: 2021-11-19T15:52:11.789410
+Start test 14: 2021-11-19T15:52:11.790925
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   188.37
+
+General statistics:
+    total time:                          10.0027s
+    total number of events:              1889
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.28
+         max:                                   44.05
+         95th percentile:                       12.98
+         sum:                                 9974.21
+
+Threads fairness:
+    events (avg/stddev):           1889.0000/0.00
+    execution time (avg/stddev):   9.9742/0.00
+
+End   test 14: 2021-11-19T15:52:21.890907
+Start test 15: 2021-11-19T15:52:21.892431
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   191.33
+
+General statistics:
+    total time:                          10.0044s
+    total number of events:              1915
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.22
+         max:                                   50.31
+         95th percentile:                       12.98
+         sum:                                 9986.85
+
+Threads fairness:
+    events (avg/stddev):           1915.0000/0.00
+    execution time (avg/stddev):   9.9868/0.00
+
+End   test 15: 2021-11-19T15:52:31.926912
+Start test 16: 2021-11-19T15:52:31.932025
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   198.27
+
+General statistics:
+    total time:                          10.0047s
+    total number of events:              1989
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.01
+         max:                                   59.68
+         95th percentile:                        8.28
+         sum:                                 9974.12
+
+Threads fairness:
+    events (avg/stddev):           1989.0000/0.00
+    execution time (avg/stddev):   9.9741/0.00
+
+End   test 16: 2021-11-19T15:52:41.993851
+Start test 17: 2021-11-19T15:52:42.004509
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   188.75
+
+General statistics:
+    total time:                          10.0039s
+    total number of events:              1896
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.27
+         max:                                   59.44
+         95th percentile:                       12.08
+         sum:                                 9982.62
+
+Threads fairness:
+    events (avg/stddev):           1896.0000/0.00
+    execution time (avg/stddev):   9.9826/0.00
+
+End   test 17: 2021-11-19T15:52:52.067918
+Start test 18: 2021-11-19T15:52:52.072883
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   191.51
+
+General statistics:
+    total time:                          10.0107s
+    total number of events:              1918
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.21
+         max:                                   56.94
+         95th percentile:                       12.98
+         sum:                                 9996.34
+
+Threads fairness:
+    events (avg/stddev):           1918.0000/0.00
+    execution time (avg/stddev):   9.9963/0.00
+
+End   test 18: 2021-11-19T15:53:02.099774
+Start test 19: 2021-11-19T15:53:02.102134
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   144.75
+
+General statistics:
+    total time:                          10.0124s
+    total number of events:              1450
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    6.87
+         max:                                   77.06
+         95th percentile:                       26.20
+         sum:                                 9955.31
+
+Threads fairness:
+    events (avg/stddev):           1450.0000/0.00
+    execution time (avg/stddev):   9.9553/0.00
+
+End   test 19: 2021-11-19T15:53:12.123907
+Start test 20: 2021-11-19T15:53:12.125445
+sysbench 1.0.20-ebf1c90 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   198.36
+
+General statistics:
+    total time:                          10.0056s
+    total number of events:              1986
+
+Latency (ms):
+         min:                                    0.85
+         avg:                                    5.02
+         max:                                   40.07
+         95th percentile:                       12.52
+         sum:                                 9962.90
+
+Threads fairness:
+    events (avg/stddev):           1986.0000/0.00
+    execution time (avg/stddev):   9.9629/0.00
+
+End   test 20: 2021-11-19T15:53:22.150937
+## End  : 2021-11-19T15:53:22.153400

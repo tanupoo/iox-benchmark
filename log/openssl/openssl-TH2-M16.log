@@ -1,0 +1,415 @@
+## Parameers
+profile: ir1101@home
+app_name: app20211124T142540x1
+cpu_units: 512
+nb_tests: 20
+nb_threads: 2
+memory_size: 16
+target: openssl
+exec_time: 
+log_file: /iox_data/logs/app20211124T142540x1.log
+max_prime: 10000
+## Sleep: 2021-11-24T14:26:20.816741
+142620
+## Start: 2021-11-24T14:26:20.864872
+Start test 1: 2021-11-24T14:26:20.869334
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:694:2048:10.01
++DTP:2048:public:rsa:10
++R1:671:2048:10.01
++DTP:2048:public:rsa:10
++R2:35725:2048:10.00
++R2:41152:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.014918:0.000243 from 0
+Got: +F2:2:2048:0.014424:0.000280 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.007333s 0.000130s    136.4   7686.7
+End   test 1: 2021-11-24T14:26:40.926121
+Start test 2: 2021-11-24T14:26:40.931545
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:972:2048:10.01
++DTP:2048:public:rsa:10
++R1:1050:2048:10.01
++DTP:2048:public:rsa:10
++R2:34818:2048:10.00
++R2:35022:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010298:0.000286 from 0
+Got: +F2:2:2048:0.009533:0.000287 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004950s 0.000143s    202.0   6980.8
+End   test 2: 2021-11-24T14:27:00.977418
+Start test 3: 2021-11-24T14:27:00.979384
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:917:2048:10.00
++DTP:2048:public:rsa:10
++R1:975:2048:10.01
++DTP:2048:public:rsa:10
++R2:38497:2048:10.00
++R2:40922:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010267:0.000244 from 0
+Got: +F2:2:2048:0.010905:0.000260 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005288s 0.000126s    189.1   7944.5
+End   test 3: 2021-11-24T14:27:21.034041
+Start test 4: 2021-11-24T14:27:21.035489
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1006:2048:10.00
++DTP:2048:public:rsa:10
++R1:1034:2048:10.00
++DTP:2048:public:rsa:10
++R2:38432:2048:10.00
++R2:40110:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009671:0.000249 from 0
+Got: +F2:2:2048:0.009940:0.000260 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004902s 0.000127s    204.0   7862.2
+End   test 4: 2021-11-24T14:27:41.085645
+Start test 5: 2021-11-24T14:27:41.087714
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1077:2048:10.00
++DTP:2048:public:rsa:10
++R1:990:2048:10.01
++DTP:2048:public:rsa:10
++R2:31201:2048:10.00
++R2:32178:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009285:0.000321 from 0
+Got: +F2:2:2048:0.010111:0.000311 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004840s 0.000158s    206.6   6330.7
+End   test 5: 2021-11-24T14:28:01.121991
+Start test 6: 2021-11-24T14:28:01.126229
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:991:2048:10.01
++DTP:2048:public:rsa:10
++R1:1049:2048:10.00
++DTP:2048:public:rsa:10
++R2:40280:2048:10.00
++R2:38105:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010101:0.000248 from 0
+Got: +F2:2:2048:0.009533:0.000262 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004904s 0.000127s    203.9   7849.1
+End   test 6: 2021-11-24T14:28:21.170212
+Start test 7: 2021-11-24T14:28:21.172366
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1044:2048:10.00
++DTP:2048:public:rsa:10
++R1:1013:2048:10.01
++DTP:2048:public:rsa:10
++R2:38882:2048:10.00
++R2:39611:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009882:0.000252 from 0
+Got: +F2:2:2048:0.009579:0.000257 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004864s 0.000127s    205.6   7859.3
+End   test 7: 2021-11-24T14:28:41.217451
+Start test 8: 2021-11-24T14:28:41.219315
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:897:2048:10.01
++DTP:2048:public:rsa:10
++R1:987:2048:10.00
++DTP:2048:public:rsa:10
++R2:36539:2048:10.00
++R2:34416:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.011159:0.000274 from 0
+Got: +F2:2:2048:0.010132:0.000291 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005310s 0.000141s    188.3   7086.1
+End   test 8: 2021-11-24T14:29:01.258276
+Start test 9: 2021-11-24T14:29:01.259825
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:974:2048:10.01
++DTP:2048:public:rsa:10
++R1:1023:2048:10.01
++DTP:2048:public:rsa:10
++R2:41241:2048:10.00
++R2:38853:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010277:0.000242 from 0
+Got: +F2:2:2048:0.009785:0.000257 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005012s 0.000125s    199.5   8023.3
+End   test 9: 2021-11-24T14:29:21.297363
+Start test 10: 2021-11-24T14:29:21.299278
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1036:2048:10.00
++DTP:2048:public:rsa:10
++R1:984:2048:10.01
++DTP:2048:public:rsa:10
++R2:38929:2048:10.01
++R2:41106:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009653:0.000257 from 0
+Got: +F2:2:2048:0.010173:0.000243 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004953s 0.000125s    201.9   8006.3
+End   test 10: 2021-11-24T14:29:41.337631
+Start test 11: 2021-11-24T14:29:41.339450
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:807:2048:10.00
++DTP:2048:public:rsa:10
++R1:821:2048:10.01
++DTP:2048:public:rsa:10
++R2:38281:2048:10.00
++R2:42706:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.012392:0.000261 from 0
+Got: +F2:2:2048:0.012192:0.000234 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.006146s 0.000123s    162.7   8104.9
+End   test 11: 2021-11-24T14:30:01.384969
+Start test 12: 2021-11-24T14:30:01.386703
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:969:2048:10.00
++DTP:2048:public:rsa:10
++R1:1000:2048:10.00
++DTP:2048:public:rsa:10
++R2:40706:2048:10.00
++R2:40185:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010000:0.000249 from 0
+Got: +F2:2:2048:0.010320:0.000246 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005079s 0.000124s    196.9   8081.1
+End   test 12: 2021-11-24T14:30:21.418286
+Start test 13: 2021-11-24T14:30:21.420181
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1081:2048:10.00
++DTP:2048:public:rsa:10
++R1:926:2048:10.01
++DTP:2048:public:rsa:10
++R2:38767:2048:10.00
++R2:38777:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009251:0.000258 from 0
+Got: +F2:2:2048:0.010810:0.000258 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004985s 0.000129s    200.6   7751.9
+End   test 13: 2021-11-24T14:30:41.464830
+Start test 14: 2021-11-24T14:30:41.467162
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:860:2048:10.00
++DTP:2048:public:rsa:10
++R1:849:2048:10.00
++DTP:2048:public:rsa:10
++R2:39465:2048:10.00
++R2:40701:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.011628:0.000253 from 0
+Got: +F2:2:2048:0.011779:0.000246 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005852s 0.000125s    170.9   8017.6
+End   test 14: 2021-11-24T14:31:01.509958
+Start test 15: 2021-11-24T14:31:01.511938
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1011:2048:10.01
++DTP:2048:public:rsa:10
++R1:990:2048:10.00
++DTP:2048:public:rsa:10
++R2:40421:2048:10.00
++R2:39205:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009901:0.000247 from 0
+Got: +F2:2:2048:0.010101:0.000255 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.005000s 0.000125s    200.0   7970.2
+End   test 15: 2021-11-24T14:31:21.556885
+Start test 16: 2021-11-24T14:31:21.558627
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1017:2048:10.00
++R1:1027:2048:10.00
++DTP:2048:public:rsa:10
++DTP:2048:public:rsa:10
++R2:32594:2048:10.00
++R2:33053:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009833:0.000307 from 0
+Got: +F2:2:2048:0.009737:0.000303 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004892s 0.000152s    204.4   6557.7
+End   test 16: 2021-11-24T14:31:41.596151
+Start test 17: 2021-11-24T14:31:41.599918
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:963:2048:10.00
++DTP:2048:public:rsa:10
++R1:1048:2048:10.00
++DTP:2048:public:rsa:10
++R2:39711:2048:10.00
++R2:39258:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.010384:0.000252 from 0
+Got: +F2:2:2048:0.009542:0.000255 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004973s 0.000127s    201.1   7889.8
+End   test 17: 2021-11-24T14:32:01.650756
+Start test 18: 2021-11-24T14:32:01.652322
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1003:2048:10.01
++DTP:2048:public:rsa:10
++R1:1024:2048:10.01
++DTP:2048:public:rsa:10
++R2:36984:2048:10.00
++R2:41690:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009980:0.000270 from 0
+Got: +F2:2:2048:0.009775:0.000240 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004938s 0.000127s    202.5   7870.4
+End   test 18: 2021-11-24T14:32:21.694001
+Start test 19: 2021-11-24T14:32:21.696079
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1025:2048:10.00
++DTP:2048:public:rsa:10
++R1:1037:2048:10.01
++DTP:2048:public:rsa:10
++R2:31447:2048:10.00
++R2:31896:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009756:0.000318 from 0
+Got: +F2:2:2048:0.009653:0.000314 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004852s 0.000158s    206.1   6329.4
+End   test 19: 2021-11-24T14:32:41.746745
+Start test 20: 2021-11-24T14:32:41.748725
+Forked child 0
++DTP:2048:private:rsa:10
++DTP:2048:private:rsa:10
++R1:1063:2048:10.01
++DTP:2048:public:rsa:10
++R1:993:2048:10.00
++DTP:2048:public:rsa:10
++R2:40706:2048:10.00
++R2:38416:2048:10.00
+Forked child 1
+Got: +F2:2:2048:0.009417:0.000246 from 0
+Got: +F2:2:2048:0.010070:0.000260 from 1
+OpenSSL 1.0.2h  3 May 2016
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,char) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(ptr) 
+compiler: aarch64-poky-linux-gcc  --sysroot=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN 	 -DTERMIO  -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/work/aarch64-poky-linux/openssl/1.0.2h-r0=/usr/src/debug/openssl/1.0.2h-r0 -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/home/hgovind/projects/test-sdk/update-docker-image/sdk-dev-sparrow/yp_docker/tmp/sysroots/ir1101-lxc=  -Wall -Wa,--noexecstack -DHAVE_CRYPTODEV -DUSE_CRYPTODEV_DIGESTS
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.004866s 0.000126s    205.5   7911.2
+End   test 20: 2021-11-24T14:33:01.792206
+## End  : 2021-11-24T14:33:01.794099

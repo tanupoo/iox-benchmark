@@ -1,0 +1,215 @@
+## Parameers
+profile: 
+app_name: 
+cpu_units: 
+nb_tests: 20
+nb_threads: 1
+memory_size: 
+target: openssl
+exec_time: 
+log_file: ./rpi1-openssl.log
+max_prime: 10000
+## Sleep: 2021-11-22T14:44:23.005984
+144423
+## Start: 2021-11-22T14:44:23.094730
+Start test 1: 2021-11-22T14:44:23.103608
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 13806 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026863s 0.000724s     37.2   1380.6
+End   test 1: 2021-11-22T14:44:43.195989
+Start test 2: 2021-11-22T14:44:43.198383
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13865 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000721s     37.3   1386.5
+End   test 2: 2021-11-22T14:45:03.279226
+Start test 3: 2021-11-22T14:45:03.281808
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13869 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000721s     37.3   1386.9
+End   test 3: 2021-11-22T14:45:23.347789
+Start test 4: 2021-11-22T14:45:23.350219
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13804 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000724s     37.3   1380.4
+End   test 4: 2021-11-22T14:45:43.410838
+Start test 5: 2021-11-22T14:45:43.413319
+Doing 2048 bits private rsa's for 10s: 374 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 13821 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026791s 0.000724s     37.3   1382.1
+End   test 5: 2021-11-22T14:46:03.480768
+Start test 6: 2021-11-22T14:46:03.483211
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13283 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000753s     37.3   1328.3
+End   test 6: 2021-11-22T14:46:23.547427
+Start test 7: 2021-11-22T14:46:23.551919
+Doing 2048 bits private rsa's for 10s: 264 2048 bits private RSA's in 9.99s
+Doing 2048 bits public rsa's for 10s: 10126 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.037841s 0.000988s     26.4   1012.6
+End   test 7: 2021-11-22T14:46:43.656476
+Start test 8: 2021-11-22T14:46:43.661053
+Doing 2048 bits private rsa's for 10s: 352 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 13797 2048 bits public RSA's in 9.99s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.028466s 0.000724s     35.1   1381.1
+End   test 8: 2021-11-22T14:47:03.789995
+Start test 9: 2021-11-22T14:47:03.792553
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13864 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000721s     37.3   1386.4
+End   test 9: 2021-11-22T14:47:23.859906
+Start test 10: 2021-11-22T14:47:23.862431
+Doing 2048 bits private rsa's for 10s: 373 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13870 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026836s 0.000721s     37.3   1387.0
+End   test 10: 2021-11-22T14:47:43.929159
+Start test 11: 2021-11-22T14:47:43.931685
+Doing 2048 bits private rsa's for 10s: 311 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13799 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.032186s 0.000725s     31.1   1379.9
+End   test 11: 2021-11-22T14:48:04.000161
+Start test 12: 2021-11-22T14:48:04.002611
+Doing 2048 bits private rsa's for 10s: 312 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 12984 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.032115s 0.000770s     31.1   1298.4
+End   test 12: 2021-11-22T14:48:24.081809
+Start test 13: 2021-11-22T14:48:24.086250
+Doing 2048 bits private rsa's for 10s: 338 2048 bits private RSA's in 10.00s
+Doing 2048 bits public rsa's for 10s: 13828 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.029586s 0.000723s     33.8   1382.8
+End   test 13: 2021-11-22T14:48:44.192306
+Start test 14: 2021-11-22T14:48:44.194764
+Doing 2048 bits private rsa's for 10s: 365 2048 bits private RSA's in 10.04s
+Doing 2048 bits public rsa's for 10s: 9579 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.027507s 0.001044s     36.4    957.9
+End   test 14: 2021-11-22T14:49:04.284789
+Start test 15: 2021-11-22T14:49:04.287211
+Doing 2048 bits private rsa's for 10s: 311 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 12804 2048 bits public RSA's in 9.99s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.032219s 0.000780s     31.0   1281.7
+End   test 15: 2021-11-22T14:49:24.364627
+Start test 16: 2021-11-22T14:49:24.369018
+Doing 2048 bits private rsa's for 10s: 342 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13821 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.029269s 0.000724s     34.2   1382.1
+End   test 16: 2021-11-22T14:49:44.482473
+Start test 17: 2021-11-22T14:49:44.484959
+Doing 2048 bits private rsa's for 10s: 311 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13871 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.032186s 0.000721s     31.1   1387.1
+End   test 17: 2021-11-22T14:50:04.546657
+Start test 18: 2021-11-22T14:50:04.549089
+Doing 2048 bits private rsa's for 10s: 374 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 13831 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026791s 0.000723s     37.3   1383.1
+End   test 18: 2021-11-22T14:50:24.616366
+Start test 19: 2021-11-22T14:50:24.618836
+Doing 2048 bits private rsa's for 10s: 312 2048 bits private RSA's in 10.01s
+Doing 2048 bits public rsa's for 10s: 13799 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.032083s 0.000725s     31.2   1379.9
+End   test 19: 2021-11-22T14:50:44.715802
+Start test 20: 2021-11-22T14:50:44.718268
+Doing 2048 bits private rsa's for 10s: 374 2048 bits private RSA's in 10.02s
+Doing 2048 bits public rsa's for 10s: 13830 2048 bits public RSA's in 10.00s
+OpenSSL 1.1.1k  25 Mar 2021
+built on: Tue Aug 24 08:28:12 2021 UTC
+options:bn(64,32) rc4(char) des(long) aes(partial) blowfish(ptr) 
+compiler: gcc -fPIC -pthread -Wa,--noexecstack -Wall -Wa,--noexecstack -g -O2 -ffile-prefix-map=/build/openssl-AAl7vI/openssl-1.1.1k=. -fstack-protector-strong -Wformat -Werror=format-security -DOPENSSL_USE_NODELETE -DOPENSSL_PIC -DOPENSSL_CPUID_OBJ -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DKECCAK1600_ASM -DAES_ASM -DBSAES_ASM -DGHASH_ASM -DECP_NISTZ256_ASM -DPOLY1305_ASM -DNDEBUG -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -Wdate-time -D_FORTIFY_SOURCE=2
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.026791s 0.000723s     37.3   1383.0
+End   test 20: 2021-11-22T14:51:04.785069
+## End  : 2021-11-22T14:51:04.787541

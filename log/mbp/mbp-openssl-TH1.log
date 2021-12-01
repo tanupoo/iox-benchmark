@@ -1,0 +1,215 @@
+## Parameers
+profile: 
+app_name: 
+cpu_units: 
+nb_tests: 20
+nb_threads: 1
+memory_size: 
+target: openssl
+exec_time: 
+log_file: ./sysbench.log
+max_prime: 10000
+## Sleep: 2021-11-22T23:05:54.864702
+230554
+## Start: 2021-11-22T23:05:54.994435
+Start test 1: 2021-11-22T23:05:55.020830
+Doing 2048 bit private rsa's for 10s: 12632 2048 bit private RSA's in 9.95s
+Doing 2048 bit public rsa's for 10s: 395261 2048 bit public RSA's in 9.94s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000788s 0.000025s   1269.5  39764.7
+End   test 1: 2021-11-22T23:06:15.094346
+Start test 2: 2021-11-22T23:06:15.097954
+Doing 2048 bit private rsa's for 10s: 12926 2048 bit private RSA's in 9.98s
+Doing 2048 bit public rsa's for 10s: 410192 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000772s 0.000024s   1295.2  41060.3
+End   test 2: 2021-11-22T23:06:35.119040
+Start test 3: 2021-11-22T23:06:35.122759
+Doing 2048 bit private rsa's for 10s: 12979 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 408656 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000770s 0.000024s   1299.2  40906.5
+End   test 3: 2021-11-22T23:06:55.148294
+Start test 4: 2021-11-22T23:06:55.151934
+Doing 2048 bit private rsa's for 10s: 12948 2048 bit private RSA's in 9.98s
+Doing 2048 bit public rsa's for 10s: 409358 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1297.4  40976.8
+End   test 4: 2021-11-22T23:07:15.168975
+Start test 5: 2021-11-22T23:07:15.172461
+Doing 2048 bit private rsa's for 10s: 12956 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 410364 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1296.9  41077.5
+End   test 5: 2021-11-22T23:07:35.197277
+Start test 6: 2021-11-22T23:07:35.200862
+Doing 2048 bit private rsa's for 10s: 12974 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409248 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000770s 0.000024s   1298.7  40965.8
+End   test 6: 2021-11-22T23:07:55.224106
+Start test 7: 2021-11-22T23:07:55.227496
+Doing 2048 bit private rsa's for 10s: 12971 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409975 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000770s 0.000024s   1298.4  41038.5
+End   test 7: 2021-11-22T23:08:15.254607
+Start test 8: 2021-11-22T23:08:15.258244
+Doing 2048 bit private rsa's for 10s: 12943 2048 bit private RSA's in 9.98s
+Doing 2048 bit public rsa's for 10s: 408048 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1296.9  40845.6
+End   test 8: 2021-11-22T23:08:35.280639
+Start test 9: 2021-11-22T23:08:35.284126
+Doing 2048 bit private rsa's for 10s: 12964 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409257 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1297.7  40966.7
+End   test 9: 2021-11-22T23:08:55.314501
+Start test 10: 2021-11-22T23:08:55.318229
+Doing 2048 bit private rsa's for 10s: 12970 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409005 2048 bit public RSA's in 9.98s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000770s 0.000024s   1298.3  40982.5
+End   test 10: 2021-11-22T23:09:15.335975
+Start test 11: 2021-11-22T23:09:15.339581
+Doing 2048 bit private rsa's for 10s: 12941 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409830 2048 bit public RSA's in 10.00s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000772s 0.000024s   1295.4  40983.0
+End   test 11: 2021-11-22T23:09:35.373036
+Start test 12: 2021-11-22T23:09:35.376597
+Doing 2048 bit private rsa's for 10s: 12932 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 407759 2048 bit public RSA's in 9.98s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000773s 0.000024s   1294.5  40857.6
+End   test 12: 2021-11-22T23:09:55.395930
+Start test 13: 2021-11-22T23:09:55.399279
+Doing 2048 bit private rsa's for 10s: 12939 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 411093 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000772s 0.000024s   1295.2  41150.5
+End   test 13: 2021-11-22T23:10:15.434410
+Start test 14: 2021-11-22T23:10:15.438058
+Doing 2048 bit private rsa's for 10s: 12952 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 403839 2048 bit public RSA's in 9.97s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000025s   1296.5  40505.4
+End   test 14: 2021-11-22T23:10:35.462161
+Start test 15: 2021-11-22T23:10:35.466155
+Doing 2048 bit private rsa's for 10s: 12952 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 407496 2048 bit public RSA's in 9.98s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1296.5  40831.3
+End   test 15: 2021-11-22T23:10:55.503028
+Start test 16: 2021-11-22T23:10:55.506576
+Doing 2048 bit private rsa's for 10s: 12936 2048 bit private RSA's in 9.98s
+Doing 2048 bit public rsa's for 10s: 409549 2048 bit public RSA's in 10.00s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000771s 0.000024s   1296.2  40954.9
+End   test 16: 2021-11-22T23:11:15.530568
+Start test 17: 2021-11-22T23:11:15.534265
+Doing 2048 bit private rsa's for 10s: 12924 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 410043 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000773s 0.000024s   1293.7  41045.3
+End   test 17: 2021-11-22T23:11:35.561641
+Start test 18: 2021-11-22T23:11:35.565127
+Doing 2048 bit private rsa's for 10s: 12968 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 408611 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000770s 0.000024s   1298.1  40902.0
+End   test 18: 2021-11-22T23:11:55.584412
+Start test 19: 2021-11-22T23:11:55.588344
+Doing 2048 bit private rsa's for 10s: 12948 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 409532 2048 bit public RSA's in 9.99s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000772s 0.000024s   1296.1  40994.2
+End   test 19: 2021-11-22T23:12:15.622632
+Start test 20: 2021-11-22T23:12:15.626260
+Doing 2048 bit private rsa's for 10s: 12948 2048 bit private RSA's in 9.99s
+Doing 2048 bit public rsa's for 10s: 408183 2048 bit public RSA's in 9.98s
+OpenSSL 1.0.2u  20 Dec 2019
+built on: reproducible build, date unspecified
+options:bn(64,64) rc4(ptr,int) des(idx,cisc,16,int) aes(partial) idea(int) blowfish(idx) 
+compiler: cc -I. -I.. -I../include  -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -arch x86_64 -O3 -DL_ENDIAN -Wall -DOPENSSL_IA32_SSE2 -DOPENSSL_BN_ASM_MONT -DOPENSSL_BN_ASM_MONT5 -DOPENSSL_BN_ASM_GF2m -DSHA1_ASM -DSHA256_ASM -DSHA512_ASM -DMD5_ASM -DAES_ASM -DVPAES_ASM -DBSAES_ASM -DWHIRLPOOL_ASM -DGHASH_ASM -DECP_NISTZ256_ASM
+                  sign    verify    sign/s verify/s
+rsa 2048 bits 0.000772s 0.000024s   1296.1  40900.1
+End   test 20: 2021-11-22T23:12:35.659908
+## End  : 2021-11-22T23:12:35.663462
