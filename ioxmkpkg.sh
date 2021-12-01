@@ -3,7 +3,7 @@
 # Usage: mkpkg.sh
 #        PROFILLE=ir809 mkpkg.sh
 #        PROFILLE=cat9135 EXEC_TIME=133000 mkpkg.sh
-# PROFILE     ir1101@home
+# PROFILE     ir1101@tlab
 # APP_NAME    app${CPU_UNITS}
 # CPU_UNITS   32
 # NB_TESTS    20
@@ -13,8 +13,8 @@
 # EXEC_TIME   None, HHMMSS
 # LOG_FILE    ${APP_NAME}.log
 
-image_name=ir1101-sysbench-cpu
-profile=${PROFILE:=ir1101@home}
+image_name=ir1101-benchmark
+profile=${PROFILE:=ir1101@tlab}
 app_name=${APP_NAME:=app${cpu_units}}
 cpu_units=${CPU_UNITS:=32}
 nb_tests=${NB_TESTS:=20}
@@ -49,8 +49,8 @@ mkdir ${app_dir}
 cat <<EOD > ${app_dir}/package.yaml
 descriptor-schema-version: "2.12"
 info:
-  name: ir1101-sysbench-cpu
-  description: buildkit.dockerfile.v0
+  name: ir1101-benchmark
+  description: "Docker Linux with sysbench/openssl/linpack"
   version: latest
 app:
   cpuarch: aarch64
@@ -69,7 +69,7 @@ app:
     target:
     - /bin/sh
     - -c
-    - /bin/test.sh
+    - /bin/benchmark.sh
     runtime_options: "${runtime_options}"
   type: docker
 EOD
