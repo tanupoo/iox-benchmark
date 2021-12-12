@@ -1,5 +1,6 @@
 #!/bin/sh
 
+docker_image=${DOCKER_IMAGE:=ir1101-benchmark}
 profile=${PROFILE:=ir1101@tlab}
 exec_time=${EXEC_TIME}
 nb_tests=${NB_TESTS:=20}
@@ -14,13 +15,13 @@ app_list_storage=".app_list"
 
 Usage()
 {
-    echo "Usage: test-cpu-units.sh (start|getlog|clean) unit ..."
+    echo "Usage: ioxtest-cpu-units.sh (start|getlog|clean) unit ..."
     echo "    e.g."
-    echo "    test-cpu-units.sh start 256 256"
-    echo "    test-cpu-units.sh getlog"
-    echo "    test-cpu-units.sh clean"
-    echo "    EXEC_TIME=134000 test-cpu-units.sh start 16 32"
-    echo "    PROFILE=ir1101 test-cpu-units.sh start 16 32"
+    echo "    ioxtest-cpu-units.sh start 256 256"
+    echo "    ioxtest-cpu-units.sh getlog"
+    echo "    ioxtest-cpu-units.sh clean"
+    echo "    EXEC_TIME=134000 ioxtest-cpu-units.sh start 16 32"
+    echo "    PROFILE=ir1101 ioxtest-cpu-units.sh start 16 32"
     exit 0
 }
 
@@ -44,12 +45,12 @@ start()
         app_list="${app_list}${app_name} "
         echo "##"
         echo "## packaging $app_name"
-        PROFILE=${profile} APP_NAME=${app_name} \
+        DOCKER_IMAGE=${docker_image} PROFILE=${profile} APP_NAME=${app_name} \
             CPU_UNITS=${unit} MEMORY_SIZE=${memory_size} \
             TARGET=${target} NB_TESTS=${nb_tests} NB_THREADS=${nb_threads} \
             EXEC_TIME=${exec_time} LOG_FILE=${app_name}.log \
             APP_BASE_DIR=${app_base_dir} \
-            ./mkpkg.sh
+            ./ioxmkpkg.sh
     done
 
     echo "=== start test ==="
