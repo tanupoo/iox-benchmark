@@ -10,6 +10,7 @@ from dateutil.parser import parse as dtparse
 import math
 import matplotlib.pyplot as plt
 import statistics
+import json
 
 if not (sys.version_info.major == 3 and sys.version_info.minor >= 8):
     print("Required Python 3.8 or later")
@@ -32,18 +33,20 @@ ap.add_argument("--post-skip", action="store", dest="post_skip",
 ap.add_argument("--move", action="store", dest="logdir",
                 help="specify the log directory to rename the file "
                     "based on the string of the log_file in the log file.")
-ap.add_argument("--no-stat", action="store_true", dest="no_stat",
-                help="disable to show the stat.")
+ap.add_argument("--no-sum", action="store_true", dest="no_sum",
+                help="disable to show the summary.")
 ap.add_argument("-st", "--start-time", action="store", dest="sig_st_time",
                 help="specify the start time to take into account.")
 ap.add_argument("-et", "--end-time", action="store", dest="sig_et_time",
                 help="specify the end time to take into account.")
+ap.add_argument("--show-stats", action="store_true", dest="show_stats",
+                help="sppecify to show the stat of EPS and Lapse. ")
 ap.add_argument("-v", action="count", dest="verbose_level",
                 default=0,
                 help="increase verbose level. max. -vvvv")
 
 # graph options
-ap.add_argument("--graph-mode", action="store", dest="graph_mode",
+ap.add_argument("--graph", action="store", dest="graph_mode",
                 choices = ["hist-tt", "hist-ibt", "lapse", "clock", "units"],
                 help="specify a mode of graph.")
 ap.add_argument("--limit-st", action="store", dest="limit_st",
@@ -53,12 +56,16 @@ ap.add_argument("--limit-et", action="store", dest="limit_et",
 ap.add_argument("--digits", action="store", dest="digits",
                 type=int, default=3,
                 help="specify the number of significant digits.")
-ap.add_argument("--show-lapse-limit", action="store_true", dest="show_lapse_limit",
+ap.add_argument("--save-data", action="store",
+                dest="save_data",
+                help="specify to save the data of the graph in JSON.")
+ap.add_argument("--show-lapse-limit", action="store_true",
+                dest="show_lapse_limit",
                 help="specify to show the limit line of lapse.")
 ap.add_argument("--interval", action="store", dest="interval",
                 type=int, default=20,
                 help="specify the number of interval.")
-ap.add_argument("--graph-save", action="store", dest="graph_save",
+ap.add_argument("--save-graph", action="store", dest="save_graph",
                 help="specify the filename of the graph.")
 
 opt = ap.parse_args()
@@ -247,6 +254,10 @@ def round_half_up(n, ndigits=0):
     return n
 
 def mkgraph_lapse_do(K):
+    # save graph data
+    if opt.save_data:
+        with open(opt.save_data, "w") as fd:
+            json.dump(K, fd)
     # graph
     fig = plt.figure(figsize=(12,5))
     ax1 = fig.add_subplot(1,1,1)
@@ -330,16 +341,31 @@ def mkgraph_hist_tt(G):
             n = round_half_up(float(v["one_test_time"][j]), opt.digits)
             g["hist_tt"].setdefault(n, 0)
             g["hist_tt"][n] += 1
+    # save graph data
+    if opt.save_data:
+        with open(opt.save_data, "w") as fd:
+            json.dump(K, fd)
     # graph
     fig = plt.figure(figsize=(8,6))
+    #fig = plt.figure(figsize=(12,6))
     ax1 = fig.add_subplot(1,1,1)
     tweak = len(K.items())
-    for k,v in K.items():
+    for i,kv in enumerate(sorted(K.items(), key=lambda kv: int(kv[0]))):
+        k,v = kv
         ax1.scatter(v["hist_tt"].keys(),
-                    [i+(v["data_no"]/tweak) for i in v["hist_tt"].values()],
+                    [j+(i/tweak) for j in v["hist_tt"].values()],
                     label=k,
                     marker="o",
                     s=4)
+        """
+        ax1.bar([j+0.0001 for j in v["hist_tt"].keys()],
+                [j for j in v["hist_tt"].values()],
+                label=k,
+                width=0.0001)
+        """
+
+    #ax1.set_xlim(10.008, 10.018)
+    #ax1.set_ylim(0, 12)
     ax1.set_xlabel("Test Time")
     ax1.set_ylabel("Number of Events")
     plt.legend()
@@ -370,6 +396,10 @@ def mkgraph_hist_ibt(G):
             n = round_half_up(float(v["interval_btw_tests"][j]), opt.digits)
             g["hist_ibt"].setdefault(n, 0)
             g["hist_ibt"][n] += 1
+    # save graph data
+    if opt.save_data:
+        with open(opt.save_data, "w") as fd:
+            json.dump(K, fd)
     # graph
     fig = plt.figure(figsize=(8,6))
     ax1 = fig.add_subplot(1,1,1)
@@ -403,8 +433,8 @@ if opt.graph_mode is not None:
         raise RuntimeError("ERROR: should not come here.")
         exit(-1)
     if ret:
-        if opt.graph_save:
-            ret.savefig(opt.graph_save)
+        if opt.save_graph:
+            ret.savefig(opt.save_graph)
         ret.show()
 
 # print result.
@@ -413,7 +443,7 @@ if target == "sysbench":
     if opt.verbose_level == 0:
         hdrfmt = "{:>2} {:>4} {:>7} {:8}"
         hdr = ["ID", "Unit", "EPS", "Lapse"]
-        fmt = "{:>2} {:>4} {:>7.2f} {:8}"
+        fmt = "{:>2} {:>4} {:>7.2f} {:10.6f}"
         vkey = ["cpu_units", "eps", "tt"]
     else: # opt.verbose_level > 0
         hdrfmt = "{:>2} {:>4} {:>2} {:>2} {:>7} {:19} {:19} {:8}"
@@ -427,8 +457,11 @@ elif target == "openssl":
     fmt = "{:>2} {:>4} {:>2} {:>2} {:>6} {:>8} {:19} {:19} {:8}"
     vkey = [ "cpu_units", "nb_tests", "nb_threads", "sign_s", "verify_s",
           "st_test_short", "et_test_short", "tt" ]
+else:
+    ap.print_help()
+    exit(0)
 
-if not opt.no_stat:
+if not opt.no_sum:
     print(hdrfmt.format(*hdr))
     for i,v in enumerate(sorted(G, key=lambda x: x["cpu_units"])):
         print(fmt.format(1+i, *[ v[p] for p in vkey ]))
@@ -443,5 +476,21 @@ if not opt.no_stat:
             print(f"    Test Time: {v['one_test_time']}")
             print(f"    Interval btw Tests: {v['interval_btw_tests']}")
             print(f"    Timestamp Set: {v['ott_set']}")
+    if target == "sysbench" and opt.show_stats:
+        print("EPS:")
+        eps_list = [v["eps"] for v in G]
+        print("  mean :", statistics.mean(eps_list))
+        print("  mode :", statistics.mode(eps_list))
+        print("  min  :", min(eps_list))
+        print("  max  :", max(eps_list))
+        print("  stdev:", statistics.stdev(eps_list))
+        print("Lapse:")
+        tt_list = [v["tt"] for v in G]
+        print("  mean :", statistics.mean(tt_list))
+        print("  mode :", statistics.mode(tt_list))
+        print("  min  :", min(tt_list))
+        print("  max  :", max(tt_list))
+        print("  stdev:", statistics.stdev(tt_list))
+
 
 
