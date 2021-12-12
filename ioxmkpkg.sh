@@ -3,6 +3,7 @@
 # Usage: mkpkg.sh
 #        PROFILLE=ir809 mkpkg.sh
 #        PROFILLE=cat9135 EXEC_TIME=133000 mkpkg.sh
+# DOCKER_IMAGE ir1101-benchmark, docker image name
 # PROFILE     ir1101@tlab
 # APP_NAME    app${CPU_UNITS}
 # CPU_UNITS   32
@@ -13,7 +14,7 @@
 # EXEC_TIME   None, HHMMSS
 # LOG_FILE    ${APP_NAME}.log
 
-image_name=ir1101-benchmark
+docker_image=${DOCKER_IMAGE:=ir1101-benchmark}
 profile=${PROFILE:=ir1101@tlab}
 app_name=${APP_NAME:=app${cpu_units}}
 cpu_units=${CPU_UNITS:=32}
@@ -75,12 +76,12 @@ app:
 EOD
 
 # Packaging
-ioxclient --profile ${profile} docker pkg ${image_name} ${app_dir}/
+ioxclient --profile ${profile} docker pkg ${docker_image} ${app_dir}/
 
 # Install
 ioxclient --profile ${profile} app in ${app_name} ${app_dir}/package.tar
 
 # Activate
 ioxclient --profile ${profile} app act ${app_name} \
-    --payload activate.json \
+    --payload docker/activate.json \
     --docker-opts "${runtime_options}"
