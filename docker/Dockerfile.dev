@@ -1,5 +1,5 @@
 # dev
-FROM devhub-docker.cisco.com/iox-docker/ir1101/base-rootfs as builder
+FROM devhub-docker.cisco.com/iox-docker/ir1101/base-rootfs
 RUN opkg update
 RUN opkg install coreutils
 RUN opkg install git pkgconfig
@@ -16,3 +16,10 @@ RUN mkdir /build/lib && cp /lib/libgcc_s.so* /build/lib/
 RUN wget -O linpack.c http://www.netlib.org/benchmark/linpackc.new
 RUN gcc -O3 linpack.c -o linpack.noopt -lm && \
 	mv linpack.noopt /build/bin/
+RUN gcc -O3 -mcpu=cortex-a72+crypto linpack.c -o linpack.cpu -lm && \
+	mv linpack.cpu /build/bin/
+RUN gcc -O3 -mcpu=cortex-a72+crypto \
+	-mtune=cortex-a72 -march=armv8-a \
+	linpack.c -o linpack.cpu+tune+arch -lm && \
+	mv linpack.cpu+tune+arch /build/bin/
+
