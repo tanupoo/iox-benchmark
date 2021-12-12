@@ -14,8 +14,10 @@ RUN git clone https://github.com/akopytov/sysbench && \
 	make install
 RUN mkdir /build/lib && cp /lib/libgcc_s.so* /build/lib/
 RUN wget -O linpack.c http://www.netlib.org/benchmark/linpackc.new
-RUN gcc -O3 linpack.c -o linpack -lm && \
+RUN gcc -O3 linpack.c -o linpack && \
 	mv linpack /build/bin/
+RUN gcc -O3 -mcpu=cortex-a72 linpack.c -o linpack.opt && \
+	mv linpack.opt /build/bin/
 
 # app
 FROM devhub-docker.cisco.com/iox-docker/ir1101/base-rootfs
@@ -26,6 +28,7 @@ RUN (opkg install tzdata ; exit 0) && \
 	cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 COPY --from=builder /build/bin/sysbench /bin/
 COPY --from=builder /build/bin/linpack /bin/
+COPY --from=builder /build/bin/linpack.opt /bin/
 COPY --from=builder /build/share/sysbench /usr/share/sysbench
 COPY --from=builder /build/lib /lib
 COPY benchmark.sh /bin/
