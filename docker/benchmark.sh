@@ -66,6 +66,14 @@ test_linpack()
     printf "\nq\n" | /bin/linpack
 }
 
+test_sleep()
+{
+    while true
+    do
+        sleep 3600
+    done
+}
+
 fixsec()
 {
     if [ -z "$1" ] ; then echo 0 ; else echo $1 ; fi
