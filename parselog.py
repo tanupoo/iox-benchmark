@@ -478,19 +478,19 @@ if not opt.no_sum:
             print(f"    Timestamp Set: {v['ott_set']}")
     if target == "sysbench" and opt.show_stats:
         print("EPS:")
-        eps_list = [v["eps"] for v in G]
-        print("  mean :", statistics.mean(eps_list))
-        print("  mode :", statistics.mode(eps_list))
-        print("  min  :", min(eps_list))
-        print("  max  :", max(eps_list))
-        print("  stdev:", statistics.stdev(eps_list))
+        eps_list = [v["eps"]/v["nb_tests"] for v in G]
+        print("  mean :", round(statistics.mean(eps_list),6))
+        print("  mode :", round(statistics.mode(eps_list),6))
+        print("  min  :", round(min(eps_list),6))
+        print("  max  :", round(max(eps_list),6))
+        print("  stdev:", round(statistics.stdev(eps_list),6))
         print("Lapse:")
-        tt_list = [v["tt"] for v in G]
-        print("  mean :", statistics.mean(tt_list))
-        print("  mode :", statistics.mode(tt_list))
-        print("  min  :", min(tt_list))
-        print("  max  :", max(tt_list))
-        print("  stdev:", statistics.stdev(tt_list))
+        tt_list = [v["tt"]/v["nb_tests"] for v in G]
+        print("  mean :", round(statistics.mean(tt_list),6))
+        print("  mode :", round(statistics.mode(tt_list),6))
+        print("  min  :", round(min(tt_list),6))
+        print("  max  :", round(max(tt_list),6))
+        print("  stdev:", round(statistics.stdev(tt_list),6))
 
 
 
