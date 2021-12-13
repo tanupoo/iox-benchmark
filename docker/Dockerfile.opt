@@ -1,0 +1,16 @@
+# app
+FROM devhub-docker.cisco.com/iox-docker/ir1101/base-rootfs
+RUN opkg update
+RUN opkg install coreutils
+#RUN opkg install openssl
+RUN (opkg install tzdata ; exit 0) && \
+	cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+COPY build/bin/sysbench /bin/
+COPY build/bin/linpack.noopt /bin/
+COPY build/bin/linpack.cpu /bin/
+COPY build/bin/linpack.cpu+tune+arch /bin/
+COPY build/bin/openssl /bin/
+COPY build/share/sysbench /usr/share/sysbench
+COPY build/lib /lib
+COPY benchmark.sh /bin/
+
