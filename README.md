@@ -15,14 +15,13 @@ docker build -t ir1101-benchmark docker/
 Usage: ioxtest-cpu-units.sh (start|getlog|clean) unit ...
 ```
 
-unit に CPUユニット値を指定する。
-コンテナを複数動かす場合は列挙する。
-同じ値の場合は `x` が使える。例えば、256を4つ動かす場合は、`256x4`
+- unit に CPUユニット値を指定する。
+- コンテナを複数動かす場合は列挙する。
+- 同じ値の場合は `x` が使える。例えば、256を4つ動かす場合は、`256x4`
+- その他のパラメータは環境変数で渡す。
+- 環境変数は以下の通り。カッコ内はデフォルト値。
 
-その他のパラメータは環境変数で渡す。
-
-環境変数は以下の通り。カッコ内はデフォルト値。
-
+```
 DOCKER_IMAGE: テストのためのDockerイメージを指定する。(ir1101-benchmark)
 PROFILE: ioxclientで使うプロファイル名。(ir1101@tlab)
 EXEC_TIME: テストの起動時間。指定しなければ即時実行する。
@@ -30,6 +29,7 @@ NB_TESTS: テスト回数。(20)
 NB_THREADS: スレッド数。(1)
 TARGET: テスト名 (sysbench)
 MEMORY_SIZE: IOxアプリに割り当てるメモリサイズ。(64)
+```
 
 TARGETは下記のいずれか。
 
